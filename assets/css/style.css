@@ -1,0 +1,23 @@
+.box2 {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+
+.active {
+    padding-top: 100px;
+}
+
+.aktiv{
+    text-decoration: line-through;
+}
+.kvadrat{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #fff;
+}
