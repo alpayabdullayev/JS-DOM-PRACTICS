@@ -16,6 +16,15 @@ body.append(btn)
 btn.onclick = () =>{
     let addStrings = prompt("please add element")
     let div = document.createElement('div')
+    let cancel = document.createElement('span')
+    cancel.textContent= 'x'
+    cancel.style.backgroundColor = 'blue'
+    cancel.style.padding = '20px'
+    
+    // console.log(cancel);
+    cancel.onclick = () => {
+        div.remove()
+    }
     div.textContent= addStrings
     div.classList.add("kvadrat");
     div.style.marginTop = '20px'
@@ -23,6 +32,7 @@ btn.onclick = () =>{
         div.classList.toggle('aktiv')
     }
     body.append(div)
+    div.append(cancel)
 
 }
 
