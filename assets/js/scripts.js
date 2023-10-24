@@ -16,13 +16,14 @@ body.append(btn)
 btn.onclick = () =>{
     let addStrings = prompt("please add element")
     let div = document.createElement('div')
-    div.innerText= addStrings
+    div.textContent= addStrings
     div.classList.add("kvadrat");
     div.style.marginTop = '20px'
-    body.append(div)
     div.onclick = () =>{
         div.classList.toggle('aktiv')
     }
+    body.append(div)
+
 }
 
 h1.onclick = () => {
